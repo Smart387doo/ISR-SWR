@@ -41,6 +41,6 @@ export async function getStaticProps() {
       fallback: {
         '/api/cryptoCompare': crypto
       }
-    },
+    }, revalidate: 10,
   };
 }
