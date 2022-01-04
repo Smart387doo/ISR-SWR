@@ -13,9 +13,9 @@ function Crypto() {
     <>
       {console.log('data', data)}
       {data.map((single, index) => (
-        <div key={index} className='flex px-8 border-b divide-x'>
-          <div className='w-6 mr-4'>{index == 0 ? ' ' : index}</div>
-          <div className='w-48 px-4 mx-4 truncate'>{single.coin}</div>
+        <div key={index} className='flex px-8 border-b divide-x-2'>
+          <div className='w-1 mr-4'>{index == 0 ? ' ' : index}</div>
+          <div className='px-4 mx-4 truncate w-44'>{single.coin}</div>
           <div className='px-4'>{single.price}</div>
         </div>
       ))}
