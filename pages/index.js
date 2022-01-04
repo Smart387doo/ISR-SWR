@@ -26,7 +26,7 @@ function Crypto() {
 export default function Home({ fallback }) {
   console.log('evo nas u Home');
   return (
-    <SWRConfig value={{ refreshInterval: 10000, fallback }}>
+    <SWRConfig value={{ fallback }}>
       <Crypto />
     </SWRConfig>
   );
