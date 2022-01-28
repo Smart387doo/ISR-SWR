@@ -6,7 +6,7 @@ import Crypto from '../components/Crypto';
 
 export default function Home({ fallback }) {
   return (
-    <SWRConfig value={{ fallback }}>
+    <SWRConfig value={{ fallback, refreshInterval: 10000 }}>
       <Crypto />
     </SWRConfig>
   );
